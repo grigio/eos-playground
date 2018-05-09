@@ -1,0 +1,32 @@
+cd /playground
+alias cleos="cleos --url http://nodeosd:8888 --wallet-url http://nodeosd:8888"
+alias eosiocppfix="/playground/eosiocppfix"
+export PS1="\W❯ "
+echo "EOS Dev environment ready!"
+
+## Insert here your startup commands
+# ..
+
+## First run (Remember to save your default wallet master password)
+## master password: ..PW5...
+# cleos wallet create
+# cleos create key
+
+## Second run
+# cleos wallet unlock --password PW5K3dgaDnvHrt23VXiYU8XJavZwPvBgUTfD9TPQ1cpxz1e39dg1b
+# cleos set contract eosio contracts/eosio.bios -p eosio
+
+# cleos wallet import <privkey>
+
+# cleos create account eosio user EOS87NioVYnjjYT3zRsfSoQsqGBqzvsGHvLwidwP6bgZ6EFTRKNwV EOS87NioVYnjjYT3zRsfSoQsqGBqzvsGHvLwidwP6bgZ6EFTRKNwV
+# cleos create account eosio tester EOS7w9by4KjHJ2gaUjhZifiXar6SCY67zYyRS7eWkbfrTnkL1CYt6 EOS7w9by4KjHJ2gaUjhZifiXar6SCY67zYyRS7eWkbfrTnkL1CYt6
+
+# cleos get accounts EOS87NioVYnjjYT3zRsfSoQsqGBqzvsGHvLwidwP6bgZ6EFTRKNwV
+
+# --
+
+# eosiocppfix -o ciao/hello.wast ciao/hello.cpp
+# cleos create account eosio ciaoc EOS87NioVYnjjYT3zRsfSoQsqGBqzvsGHvLwidwP6bgZ6EFTRKNwV EOS87NioVYnjjYT3zRsfSoQsqGBqzvsGHvLwidwP6bgZ6EFTRKNwV
+# eosiocppfix -o hello/hello.wast hello/hello.cpp
+# cleos set contract ciaoc hello/ -p ciaoc
+
