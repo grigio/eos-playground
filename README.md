@@ -5,6 +5,8 @@ The easiest way to start develop smart contracts in the EOS Blockchain with Dock
 ### Set up
 
 ```
+git clone https://github.com/grigio/eos-playground.git
+
 # latest official docker images images
 docker pull eosio/eos && \
 docker pull eosio/builder && \
