@@ -1,7 +1,7 @@
 cd /playground
 alias cleos="cleos --url http://nodeosd:8888 --wallet-url http://nodeosd:8888"
 alias eosiocppfix="/playground/eosiocppfix"
-export PS1="\W❯ "
+export PS1="\W$ "
 echo "EOS Dev environment ready!"
 
 ## Insert here your startup commands
