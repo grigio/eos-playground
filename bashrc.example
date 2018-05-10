@@ -6,23 +6,3 @@ echo "EOS Dev environment ready!"
 
 ## Insert here your startup commands
 # ..
-
-## First run (Remember to save your default wallet master password)
-## master password: ..PW5...
-# cleos wallet create
-# cp contracts/hello/ . -R
-# eosiocppfix -o hello/hello.wast hello/hello.cpp
-### You can generate or import new keys
-## cleos create key
-# Private key: 5J21F3YcGvnACPUsAgd7qgnddFQaJtiEPYEMFWerzxrDkwsVRQc
-# Public key: EOS8Dx6iX3L6q6Nzs6pqVaqbskhYH3APEo55eVw1S6N1ZF5T87Eqo 
-## cleos wallet keys
-# cleos wallet import 5J21F3YcGvnACPUsAgd7qgnddFQaJtiEPYEMFWerzxrDkwsVRQc
-# cleos create account eosio mycontract EOS8Dx6iX3L6q6Nzs6pqVaqbskhYH3APEo55eVw1S6N1ZF5T87Eqo EOS8Dx6iX3L6q6Nzs6pqVaqbskhYH3APEo55eVw1S6N1ZF5T87Eqo
-# cleos set contract mycontract hello/ -p mycontract
-# cleos push action mycontract hi '["luigi"]' -p mycontract
-
-## Second run
-# cleos wallet unlock --password PW5K3dgaDnvHrt23VXiYU8XJavZwPvBgUTfD9TPQ1cpxz1e39dg1b
-# 
-
